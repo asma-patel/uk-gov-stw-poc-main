@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		},
+		{
+			"path": "../../../../../../DSACancellationBot"
+		},
+		{
+			"path": "../../../../../../DSACancellationBotPW"
+		},
+		{
+			"path": "../../../../../../DSACancellationChecker"
+		},
+		{
+			"path": "../../../../../../awesome-nest-boilerplate"
+		},
+		{
+			"path": "../../../../../../dsacancellation-checker-ts"
+		},
+		{
+			"path": "../../../../../../CDS-Virtual-Assistant"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CDS-Virtual-Assistant-ts"
+	}
+}

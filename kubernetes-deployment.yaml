@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: 361118753896.dkr.ecr.eu-west-2.amazonaws.com/cds-client:1.0.1
+        ports:
+        - name: http
+          containerPort: 3000
+        # imagePullPolicy: IfNotPresent
+      - name: cds-server
+        image: 361118753896.dkr.ecr.eu-west-2.amazonaws.com/cds-server
+        ports:
+        - name: http
+          containerPort: 4000
+        # imagePullPolicy: IfNotPresent
